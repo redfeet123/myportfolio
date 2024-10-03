@@ -1,0 +1,179 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+  }
+  
+header a {
+    color: #131e36;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    transition: all .135s cubic-bezier(.4,0,.6,1)
+  }
+  
+  header a {
+    color: #131e36;
+    opacity: 1;
+  }
+  
+  a:hover {
+    opacity: 1.0;
+    color: #dddddd;
+    transition: all .4s cubic-bezier(0,0,.2,1) 
+  }
+  
+  .selected {
+    color: #dddddd;
+    opacity: 1.0;
+  }
+
+  .container-fluid {
+    display: flex;  /* Enable flexbox */
+    align-items: center;  /* Align items vertically in the center */
+    justify-content: space-around;  /* Space out the items */
+    padding: 20px;  /* Optional padding */
+    gap: 220px;  /* Space between the items */
+}
+
+.container1 {
+    flex: 1;  /* Take up available space */
+    max-width: fit-content;  /* Limit width to make it responsive */
+    margin-bottom: 150px;
+}
+
+.container1 h1 {
+    color: #131e36;
+    font-weight: lighter;
+}
+
+.main {
+    width: 382px;
+    margin-bottom: 30px;
+}
+
+.secondary {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 25px;
+}
+
+.picture-container1 {
+    flex: 1; 
+    max-width: 100%; 
+    display: flex;
+    text-align: center;  
+    justify-content: center;
+    
+}
+
+.picture-container1 img {
+    max-width: 100%;  
+    height: auto; 
+    display: block;  
+}
+
+.extra {
+    margin-top: 75px
+}
+
+/* Keyframes for fade-in with slight slide-left effect */
+@keyframes fadeSlideLeft {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateX(-30px); /* Start slightly to the left */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+/* Apply the fadeSlideLeft effect */
+.fade-slide-left {
+    animation: fadeSlideLeft 1.5s ease-out forwards; /* Smooth transition effect */
+}
+
+
+
+@keyframes dropBounce {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-1000px); /* Start far above the screen */
+    }
+    60% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Drop to the original position */
+    }
+    75% {
+        transform: translateY(-30px); /* Bounce up slightly */
+    }
+    90% {
+        transform: translateY(0); /* Return to the original position */
+    }
+    100% {
+        transform: translateY(-10px); /* Final slight bounce */
+    }
+}
+
+.drop-bounce {
+    animation: dropBounce 1s ease-in-out forwards; /* Smooth drop and bounce effect */
+}
+
+footer {
+    background-color: #f1f1f1; /* Light background color */
+    padding: 20px 0; /* Padding to space out content */
+    text-align: center; /* Center align the text */
+    position: fixed; /* Sticks the footer at the bottom */
+    bottom: 0; /* Position it at the bottom */
+    width: 100%; /* Full width */
+  }
+  
+  .copyright-label {
+    color: #333; /* Text color */
+    font-size: 14px; /* Font size */
+  }
+  
+  @media (max-width: 1080px) {
+    .container-fluid {
+        flex-direction: column;
+        gap: 0;
+    }
+    .container1 {
+        margin-bottom: 0;
+    } 
+    .extra {
+        margin-top: 0;
+    }
+  }
+  /* Optional: Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .copyright-label {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  }
+
+

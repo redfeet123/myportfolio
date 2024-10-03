@@ -1,0 +1,210 @@
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+header a {
+  color: #131e36;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  transition: all .135s cubic-bezier(.4, 0, .6, 1)
+}
+
+header a {
+  color: #131e36;
+  opacity: 1;
+}
+
+a:hover {
+  opacity: 1.0;
+  color: #dddddd;
+  transition: all .4s cubic-bezier(0, 0, .2, 1)
+}
+
+.selected {
+  color: #dddddd;
+  opacity: 1.0;
+}
+
+.container-fluid {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 220px;
+}
+
+.extra {
+  margin-top: 75px
+}
+
+.hire-me {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hire-me p {
+  font-size: 25px;
+}
+
+.hire-me-para {
+  width: 500px;
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 125px;
+}
+
+.contact-icons .img2 {
+  width: 150%;
+}
+.container-fluid h1 {
+  font-size: 5rem;
+  width: fit-content;
+  margin: 0;
+  animation: dropBounce 1s ease-in-out forwards;
+  /* Smooth drop and bounce effect */
+}
+
+.contact-icons img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for transform and shadow */
+}
+
+.contact-icons img:hover {
+  transform: translateY(-10px);
+  /* Lifts the image upwards */
+}
+
+.contact-icons a {
+  width: 5%;
+}
+
+.hire-me a {
+  width: fit-content;
+}
+
+@keyframes dropBounce {
+  0% {
+    opacity: 0;
+    /* Start invisible */
+    transform: translateY(-1000px);
+    /* Start far above the screen */
+  }
+
+  60% {
+    opacity: 1;
+    /* Fully visible */
+    transform: translateY(0);
+    /* Drop to the original position */
+  }
+
+  75% {
+    transform: translateY(-30px);
+    /* Bounce up slightly */
+  }
+
+  90% {
+    transform: translateY(0);
+    /* Return to the original position */
+  }
+
+  100% {
+    transform: translateY(-10px);
+    /* Final slight bounce */
+  }
+}
+
+.about-me {
+  margin-top: 0;
+  display: flex;
+  width: 100%;
+  height: 900px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-desc {
+  width: 50%;
+}
+
+.about-me-desc p {
+  font-size: 25px;
+}
+
+footer {
+  background-color: #f1f1f1; /* Light background color */
+  padding: 20px 0; /* Padding to space out content */
+  text-align: center; /* Center align the text */
+  position: fixed; /* Sticks the footer at the bottom */
+  bottom: 0; /* Position it at the bottom */
+  width: 100%; /* Full width */
+}
+
+.copyright-label {
+  color: #333; /* Text color */
+  font-size: 14px; /* Font size */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .copyright-label {
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+.hover-btn {
+  background-color: #ffffff; /* Green background */
+  color: rgb(0, 0, 0); /* White text */
+  padding: 15px 95px; /* Padding for the button */
+  font-size: 20px; /* Font size */
+  width: fit-content;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+  border-radius: 5px; /* Rounded corners */
+  border-color: black;
+}
+
+.hover-btn:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+@media (max-width: 1335px) {
+  .container-fluid {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container-fluid {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .hire-me-para {
+    width: fit-content;
+  }
+}
