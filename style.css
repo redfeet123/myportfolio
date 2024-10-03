@@ -100,6 +100,11 @@ header a {
     margin-top: 75px
 }
 
+#animation-container {
+    width: 600px;
+    height: 600px;
+}
+
 /* Keyframes for fade-in with slight slide-left effect */
 @keyframes fadeSlideLeft {
     0% {
@@ -173,6 +178,10 @@ footer {
   @media (max-width: 768px) {
     .copyright-label {
         font-size: 12px; /* Adjust font size for smaller screens */
+    }
+    #animation-container {
+        width: 320px;
+        height: 320px;
     }
   }
 
